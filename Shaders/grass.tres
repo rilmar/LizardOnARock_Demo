@@ -24,7 +24,7 @@ input_name = "model_matrix"
 operator = 2
 
 [sub_resource type="VisualShaderNodeFloatOp" id="VisualShaderNodeFloatOp_hdrm3"]
-default_input_values = [0, 0.0, 1, 0.5]
+default_input_values = [0, 0.0, 1, 0.1]
 operator = 2
 
 [sub_resource type="VisualShaderNodeInput" id="VisualShaderNodeInput_reukx"]
@@ -90,7 +90,7 @@ void vertex() {
 
 
 // FloatOp:16
-	float n_in16p1 = 0.50000;
+	float n_in16p1 = 0.10000;
 	float n_out16p0 = n_out5p0 * n_in16p1;
 
 
@@ -135,7 +135,7 @@ void fragment() {
 
 }
 "
-graph_offset = Vector2(-834.992, 49.4295)
+graph_offset = Vector2(-832.32, 98.7557)
 modes/cull = 2
 nodes/vertex/0/position = Vector2(1620, 140)
 nodes/vertex/2/node = SubResource("VisualShaderNodeInput_reukx")
